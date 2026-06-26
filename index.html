@@ -26,8 +26,9 @@
     >
       <div class="container">
         <a class="navbar-brand" href="./index.html"
-          ><img src="./Asset 1.png" class="logo"
-        /></a>
+          >
+          <img src="./Asset 1.png" class="logo"/>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -71,14 +72,22 @@
     <!-- home pg -->
     <section>
       <div class="hero">
-        <div class="hero-content">
-          <div class="container">
-            <h4 class="mb-4 texts desings">FROM CREATIVE IDEA TO LAUNCHING</h4>
-            <h1 class="mb-4 texts">
-              We <span class="text-orange">Deliver</span><br />Revenue
-              Generating<br /><span class="text-orange">Creative</span>
-              Branding<br />Solution <span class="arrow-icon"></span>
-            </h1>
+        <div class="container-fluid px-0 hero-inner">
+          <div class="row g-0 h-100">
+            <div class="col-md-6 hero-left d-flex flex-column justify-content-center">
+              <div class="px-4 px-md-5">
+                
+                <h1 class="mb-4 texts">
+                  Hi, <span class="text-orange">I’m</span><br />Mahadhir
+                  Mohamed <br /><span class="text-orange">Founder and</span>
+                  CEO of <br />Dhir Designs <span class="arrow-icon"></span>
+                </h1>
+                <h4 class="mb-4 texts desings">FROM CREATIVE IDEA TO LAUNCHING</h4>
+              </div>
+            </div>
+            <div class="col-md-6 hero-right">
+              <img src="./client.png" alt="Client" class="hero-client-image" />
+            </div>
           </div>
         </div>
         <div class="footers">
@@ -86,7 +95,7 @@
             <div class="row">
               <div class="col-md-6 texts">
                 <p class="mb-0">LOCATION</p>
-                <p class="mb-0">TAMILNADU & ADIRAI</p>
+                <p class="mb-0">Tamilnadu, India.</p>
               </div>
               <div class="col-md-6 text-md-end texts">
                 <p class="mb-0">MOBILE</p>
@@ -182,7 +191,7 @@
         <div class="row">
           <div class="col-md-6 mb-4 mb-md-0">
             <div class="number-graphic">
-              <span class="number-1">1</span><span class="number-2">2</span
+              <span class="number-1">1</span><span class="number-2">.4</span
               ><span class="plus">+</span>
             </div>
             <p class="experience-text mt-3">
@@ -192,13 +201,13 @@
           </div>
           <div class="col-md-6">
             <h1 class="agency-title mb-4">
-              DHIRMAHA IS A<br />
+              DHIR DESIGNS IS A<br />
               CREATIVE DESIGN<br />
               AGENCY IN INDIA
             </h1>
             <p class="description mb-3">
               We are a team of young creators who specialize in Branding, Logo,
-              Graphic, Package, Website & Digital Marketing with a passion for
+              Graphic and Package with a passion for
               building positive connections between brands and human emotions.
             </p>
             <p class="description mb-3">
@@ -221,12 +230,12 @@
       <div class="container py-5 cursore">
         <h1 class="text-center mb-3">OUR SERVICE</h1>
         <p class="text-center subtitle">
-          DhirMaha offer a complete range of creative services that engage and
+          Dhir designs offer a complete range of creative services that engage and
           inspire at every touchpoint
         </p>
 
         <div class="row g-4">
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="card h-100 text-center p-4">
               <div class="card-body">
                 <img
@@ -240,7 +249,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="card h-100 text-center p-4">
               <div class="card-body">
                 <img
@@ -255,7 +264,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="card h-100 text-center p-4">
               <div class="card-body">
                 <img
@@ -269,7 +278,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="card h-100 text-center p-4">
               <div class="card-body">
                 <img
@@ -283,7 +292,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <!-- <div class="col-md-4">
             <div class="card h-100 text-center p-4">
               <div class="card-body">
                 <img
@@ -310,7 +319,7 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -418,15 +427,8 @@
     <!-- whatsapp -->
     <section class="whatsapp-section">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 mb-4 mb-md-0">
-            <img
-              src="https://www.branzonecreative.com/wp-content/uploads/2023/03/shutterstock_401328388-1025x1536.png"
-              alt="Woman with smartphone"
-              class="woman-image"
-            />
-          </div>
-          <div class="col-md-6">
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center">
             <h2 class="whatsapp-heading">
               NEED HELP? TALK CHAT TO US ON WHATSAPP
             </h2>
@@ -435,7 +437,7 @@
               schedule a meeting, check availability.
             </p>
             <a
-              class="whatsapp-button d-flex align-items-center decorate"
+              class="whatsapp-button d-flex align-items-center justify-content-center decorate mx-auto"
               href="https://api.whatsapp.com/send/?phone=9894491242&text&type=phone_number&app_absent=0"
               target="_blank"
             >
@@ -474,12 +476,12 @@
                 ><i class="fab fa-instagram"></i
               ></a>
               <a
-                href="www.linkedin.com/in/dhir-designs-9ab455240"
+                href="www.linkedin.com/in/mahadhir-mohamed-9ab455240"
                 target="_blank"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </div>
-            <div>©2024 DhirMaha Creative</div>
+            <div>©2024 dhir designs Creative</div>
           </div>
           <div class="col-md-3 mb-4 mb-md-0">
             <ul class="footer-nav">
@@ -506,7 +508,7 @@
           <div class="col-md-3">
             <div class="footer-heading">LATEST BLOG</div>
             <div class="footer-blog-title">
-              We Don't Just Create Brands, We Create Emotions
+              We Give Your Brand a Heartbeat.
             </div>
             <a href="#" class="footer-blog-link">EXPLORE ALL BLOG</a>
           </div>
