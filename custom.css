@@ -265,14 +265,13 @@ h1 {
 .project-image-wrap {
   overflow: hidden;
   margin-bottom: 30px;
-  background-color: #f0f0f0;
 }
 
 .project-image {
   width: 100%;
-  height: auto;
-  max-height: 420px;
-  object-fit: contain;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
   display: block;
   will-change: transform;
 }
