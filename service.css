@@ -34,8 +34,8 @@ body {
   height: 100vh;
 }
 .bg-custom-green {
-  background-image: url("https://www.branzonecreative.com/wp-content/uploads/2023/04/Test-2-Build-cover-04.jpg");
-  background-size: cover;
+  background-image: url("assets/Asset\ 9.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -64,7 +64,7 @@ body {
 }
 .bg-custom-purple {
   background-color: #8a2be2;
-  background-image: url("https://www.branzonecreative.com/wp-content/uploads/2021/07/Aadhavan-Studio-13.jpg");
+  background-image: url("assets/pack3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -100,7 +100,7 @@ body {
   width: 30rem;
 }
 .bg-custom-blue {
-  background-image: url("https://www.branzonecreative.com/wp-content/uploads/2022/01/Medimart-027.jpg");
+  background-image: url("assets/pack2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -130,7 +130,7 @@ body {
 }
 .bg-custom-orange {
   background-color: #e2962b;
-  background-image: url("https://www.branzonecreative.com/wp-content/uploads/2021/01/Poorva-Masala-9.jpg");
+  background-image: url("assets/2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
