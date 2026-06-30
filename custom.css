@@ -264,16 +264,12 @@ h1 {
 }
 .project-image-wrap {
   overflow: hidden;
-  margin-bottom: 30px;
 }
 
 .project-image {
   width: 100%;
-  height: 450px;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
   display: block;
-  will-change: transform;
 }
 /* Happy clients */
 
