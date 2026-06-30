@@ -266,10 +266,16 @@ h1 {
   background-color: #fff;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  background-color: #fff;
+}
+
 .project-image-wrap {
   overflow: hidden;
   height: 420px;
-  background-color: #fff;
 }
 
 .project-image {
@@ -286,6 +292,9 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
   .project-image-wrap {
     height: 260px;
   }
