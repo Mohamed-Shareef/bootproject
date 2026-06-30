@@ -262,14 +262,33 @@ h1 {
   color: #6c757d;
   margin-bottom: 3rem;
 }
+.recent-projects-section {
+  background-color: #fff;
+}
+
 .project-image-wrap {
   overflow: hidden;
+  height: 420px;
+  background-color: #fff;
 }
 
 .project-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-image-wrap:hover .project-image {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .project-image-wrap {
+    height: 260px;
+  }
 }
 /* Happy clients */
 
