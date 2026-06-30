@@ -249,18 +249,12 @@ h1 {
   color: #6c757d;
   margin-bottom: 3rem;
 }
-.project-image-wrap {
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
 .project-image {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  will-change: transform;
-  background-color: transparent;
+  height: 450px;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 30px;
 }
 /* Happy clients */
 
