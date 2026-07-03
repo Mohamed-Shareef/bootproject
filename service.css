@@ -73,7 +73,7 @@ body {
 }
 .bg-custom-purple {
   background-color: #8a2be2;
-  background-image: url("assets/pack4.jpg");
+  background-image: url("assets/2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -136,7 +136,7 @@ body {
 }
 .bg-custom-orange {
   background-color: #e2962b;
-  background-image: url("assets/2.jpg");
+  background-image: url("assets/brouch10.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -311,14 +311,13 @@ body {
 .project-card {
   position: relative;
   overflow: hidden;
-  height: 300px;
   margin-bottom: 30px;
 }
 
 .project-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
   transition: transform 0.4s ease;
 }
 
@@ -391,7 +390,7 @@ body {
   }
 
   .project-card {
-    height: 300px;
+    margin-bottom: 20px;
   }
 }
 
