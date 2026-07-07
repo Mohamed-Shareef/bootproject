@@ -425,8 +425,8 @@ if (document.querySelector('.portfolio-item')) {
 
     item.addEventListener('mouseenter', () => {
       gsap.to(img, {
-        scale: 1.08,
-        filter: 'brightness(1.12)',
+        scale: 1.04,
+        filter: 'brightness(1.08)',
         duration: 0.45,
         ease: 'power2.out'
       });

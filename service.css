@@ -59,11 +59,14 @@ body {
   height: auto;
 }
 @media (max-width: 767px) {
-  .order-mobile-2 {
+  .order-mobile-1 {
     order: 1;
   }
-  .order-mobile-1 {
+  .order-mobile-2 {
     order: 2;
+  }
+  .main-bd > .container-fluid [class*="col-md-6"] {
+    min-height: 220px;
   }
 }
 
@@ -89,21 +92,10 @@ body {
   font-size: 4rem;
   font-weight: bold;
 }
-@media (max-width: 767px) {
-  .order-mobile-2 {
-    order: 1;
-  }
-  .order-mobile-1 {
-    order: 2;
-  }
-  .main-title {
-    font-size: 3rem;
-  }
-}
-
 /* design 3 */
 .alldesign {
-  width: 30rem;
+  width: 100%;
+  max-width: 30rem;
 }
 .bg-custom-blue {
   background-image: url("assets/pack6.jpg");
@@ -121,15 +113,6 @@ body {
   max-width: 100%;
   height: auto;
 }
-@media (max-width: 767px) {
-  .order-mobile-2 {
-    order: 1;
-  }
-  .order-mobile-1 {
-    order: 2;
-  }
-}
-
 /* design 4 */
 .bg-custom-black {
   background-color: #000000;
@@ -177,7 +160,8 @@ body {
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 1.2;
-  width: 30rem;
+  width: 100%;
+  max-width: 30rem;
 }
 .titles {
   display: flex;
@@ -196,11 +180,18 @@ body {
   .main-title {
     font-size: 2.5rem;
   }
+  .main-titles {
+    font-size: 2rem;
+    max-width: 100%;
+  }
   .section-title {
     font-size: 1.5rem;
   }
   .section-content {
     font-size: 1rem;
+  }
+  .converts {
+    padding: 20px 0;
   }
 }
 
@@ -394,12 +385,15 @@ body {
   }
 }
 
+
 /* we would */
 
 .main {
   background-color: #edebeb;
   color: #000;
-  height: 70vh;
+  min-height: 70vh;
+  height: auto;
+  padding: 4rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -435,7 +429,10 @@ body {
 
 @media (max-width: 768px) {
   .cta-heading {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+  .main {
+    padding: 3rem 1.5rem;
   }
 }
 
