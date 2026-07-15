@@ -66,10 +66,23 @@ body {
     order: 2;
   }
   .main-bd > .container-fluid [class*="col-md-6"] {
-    min-height: 300px;
+    min-height: 220px;
   }
 }
 
+.project-image {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 30px;
+  transition: transform 0.45s ease, filter 0.45s ease;
+  display: block;
+}
+.project-image:hover {
+  transform: scale(1.04);
+  filter: brightness(1.08);
+}
 /* design 2 */
 .bg-custom-black {
   background-color: #000000;
@@ -176,6 +189,12 @@ body {
   color: #808080;
   font-size: 1.1rem;
 }
+@media (max-width: 767px) {
+  .project-image {
+    height: 260px;
+  }
+}
+
 @media (max-width: 768px) {
   .main-title {
     font-size: 2.5rem;
@@ -299,19 +318,76 @@ body {
   margin-bottom: 50px;
 }
 
-.project-image {
-  width: 100%;
-  height: 450px;
-  object-fit: contain;
-  object-position: center;
+.project-card {
+  position: relative;
+  overflow: hidden;
   margin-bottom: 30px;
-  transition: transform 0.45s ease, filter 0.45s ease;
-  display: block;
 }
 
-.project-image:hover {
-  transform: scale(1.04);
-  filter: brightness(1.08);
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  backdrop-filter: blur(4px);
+}
+
+.project-card:hover .card-overlay {
+  transform: translateY(0);
+}
+
+.overlay-category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ccc;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.overlay-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.overlay-desc {
+  font-size: 0.82rem;
+  color: #ddd;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.yellow-bg {
+  background-color: #ffa500;
+}
+
+.blue-bg {
+  background-color: #1a237e;
+}
+
+.green-bg {
+  background-color: #2e7d32;
+}
+
+.navy-bg {
+  background-color: #000080;
 }
 
 @media (max-width: 768px) {
@@ -323,8 +399,8 @@ body {
     font-size: 18px;
   }
 
-  .project-image {
-    height: 260px;
+  .project-card {
+    margin-bottom: 20px;
   }
 }
 
