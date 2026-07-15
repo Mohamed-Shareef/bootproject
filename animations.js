@@ -549,9 +549,9 @@ if (document.querySelector('.main-bd')) {
     );
   });
 
-  // Related project cards hover + scroll
-  gsap.utils.toArray('.project-card').forEach((card, i) => {
-    gsap.from(card, {
+  // Related project images scroll in
+  gsap.utils.toArray('.project-image').forEach((img, i) => {
+    gsap.from(img, {
       scrollTrigger: { trigger: '.projects-section', start: 'top 82%' },
       opacity: 0,
       scale: 0.82,
@@ -560,9 +560,6 @@ if (document.querySelector('.main-bd')) {
       ease: 'back.out(1.5)'
     });
   });
-
-  addImageHover('.project-card img', { scale: 1.1, brightness: 1.1 });
-  addTiltHover('.project-card');
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
