@@ -5,6 +5,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 [data-bs-theme="dark"] .navbar-toggler-icon {
@@ -66,7 +67,7 @@ body {
     order: 2;
   }
   .main-bd > .container-fluid [class*="col-md-6"] {
-    min-height: 220px;
+    min-height: 300px;
   }
 }
 

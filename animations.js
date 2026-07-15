@@ -475,11 +475,13 @@ if (document.querySelector('.portfolio-item')) {
 // ═══════════════════════════════════════════════════════════════════════════
 if (document.querySelector('.main-bd')) {
 
-  // Service panels alternate slide direction
+  const isNarrow = window.matchMedia('(max-width: 767px)').matches;
+
+  // Service panels alternate slide direction (mobile: fade only, no horizontal slide)
   document.querySelectorAll('.main-bd > .container-fluid').forEach((panel, i) => {
     const text = panel.querySelector('.alldesign');
     const color = panel.querySelector('[class*="bg-custom-"]:not(.bg-custom-black)');
-    const fromX = i % 2 === 0 ? 70 : -70;
+    const fromX = isNarrow ? 0 : (i % 2 === 0 ? 70 : -70);
 
     if (text) {
       gsap.from(text, {
@@ -505,7 +507,7 @@ if (document.querySelector('.main-bd')) {
   gsap.from('.craft .main-titles', {
     scrollTrigger: { trigger: '.craft', start: 'top 80%' },
     opacity: 0,
-    x: -60,
+    x: isNarrow ? 0 : -60,
     duration: 0.9,
     ease: 'power3.out'
   });
